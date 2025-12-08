@@ -104,3 +104,4 @@ To add a new post, edit `src/data/posts.js` and add a new object to the posts ar
   content: `<h2>Section</h2><p>Content with HTML formatting</p>`
 }
 ```
+- Use Context7 to check up-to-date docs when needed for implementing new libraries or frameworks, or adding features using them.

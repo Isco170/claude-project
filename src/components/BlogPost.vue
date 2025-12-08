@@ -20,13 +20,20 @@
           <span v-for="tag in post.tags" :key="tag" class="tag">{{ tag }}</span>
         </div>
       </footer>
+
+      <CommentSection :post-id="post.id" />
     </div>
   </div>
 </template>
 
 <script>
+import CommentSection from './CommentSection.vue'
+
 export default {
   name: 'BlogPost',
+  components: {
+    CommentSection
+  },
   props: {
     post: {
       type: Object,
